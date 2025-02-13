@@ -1,0 +1,14 @@
+name: 'ParseYaml'
+description: 'Action for taking an entry from a YAML tree and output to another file'
+inputs:
+   yaml-file-path:
+      description: 'Yaml file as path'
+      required: true
+outputs:
+   parsed-yaml-file:
+      description: 'The location of the Yaml file created by the ParseYaml action'
+branding:
+   color: 'green' # optional, decorates the entry in the GitHub Marketplace
+runs:
+   using: 'node20'
+   main: 'lib/index.js'

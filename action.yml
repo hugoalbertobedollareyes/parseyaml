@@ -4,6 +4,12 @@ inputs:
    yaml-file-path:
       description: 'Yaml file as path'
       required: true
+   key-to-extract:
+      description: 'Yaml key to extract'
+      required: true
+   yaml-output-file-path:
+      description: 'Yaml output file'
+      required: true
 outputs:
    parsed-yaml-file:
       description: 'The location of the Yaml file created by the ParseYaml action'
